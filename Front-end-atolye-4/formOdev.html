@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* width: 100;
+    height: 100; */
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image:url(https://cdn.pixabay.com/photo/2016/11/29/13/01/stars-1869692_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+img{
+    width: 200px;
+    height:200px ;
+}
+.container{
+    display: flex;
+}
+</style>
+
+<body>
+    <div class="container">
+<div class="left-div">
+      <img src="https://cdn.pixabay.com/photo/2016/10/19/02/21/moon-1751987_640.png" alt="resim">
+
+    </div>
+    <div class="right-div">
+    
+    
+    
+    <form >
+      <text name="ad">Ad:</text>   <input type="text" class="field" placeholder="ad"> <br>
+      <text name="ad">Soyad:</text> <input type="text" class="field" placeholder="soyad"> <br>
+      <text name="ad">Email:</text> <input type="email" class="field" placeholder="email"> <br>
+      <text name="ad">Şifre:</text> <input type="password" class="field" placeholder="şifre"> <br>
+      <textarea placeholder="Message" class="field"></textarea> <br>
+       <button class="form-btn">Send</button>
+
+    </form>
+
+</div>
+</div>
+</body>
+</html>

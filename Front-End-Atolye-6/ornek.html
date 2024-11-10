@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 2px solid #3498db;
+    padding: 10px;
+}
+.flex-item{
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    flex-grow: 1;
+    text-align: center;
+}
+.display-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.grid-item{
+    background-color: #2ecc71;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.position-container{
+    position: relative;
+    border:2px dashed purple;
+    padding: 20px;
+    margin-top: 20px;
+}
+.positioned-item{
+    position:absolute;
+    top: 20px;
+    right:20px;
+    background-color: #e74c3c;
+    color:white;
+    padding: 10px;
+}
+
+</style>
+
+
+</head>
+<body>
+
+    <section class="flex-container">
+<div class="flex-item">  
+Flex Öğesi 1
+</div>
+<div class="flex-item">
+Flex Öğesi 2
+</div>
+<div class="flex-item">
+Flex Öğesi 3
+</div>
+<div class="flex-item">
+Flex Öğesi 4
+</div>
+    </section>
+    
+    <section class="display-grid">
+<div class="grid-item"> Grid Öğesi 1</div>
+<div class="grid-item"> Grid Öğesi 2</div>
+<div class="grid-item"> Grid Öğesi 3</div>
+<div class="grid-item"> Grid Öğesi 4</div>
+    </section>
+
+    <div class="position-container">
+Bu bir göreceli konumlandırma alanıdır.
+<div class="positioned-item">
+Kesin konumlandırma öğesi
+</div>
+    </div>
+
+<div class="box-model-example">
+Bu kutu box-sizing:border-box ile ayarlanmıştır.Bu nedenle genişlik, yükseklik ve sınırlar dahil edilerek hesaplanır.
+<div class="Inner-box">
+İç kutu
+</div>
+</div>
+
+</body>
+</html>

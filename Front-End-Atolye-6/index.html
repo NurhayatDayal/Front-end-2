@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.flex-container{
+display: flex;
+justify-content: space-between;
+}
+.flex-item{
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid #ccc;
+
+}
+.display-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+}
+.grid-item{
+    background-color: lightgreen;
+    padding: 10px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+.position-container{
+    position: relative;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+.position-item{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightcoral;
+    padding: 5px;
+}
+.box-model-example{
+    border:3px solid orange;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightyellow;
+}
+.inner-box{
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+    border: 2px solid orange;
+}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            Öğe1
+
+        </div>
+        <div class="flex-item">
+            Öğe2
+        </div>
+        <div class="flex-item">
+            Öğe3
+        </div>
+
+    </div>
+    
+    <hr>
+
+    <div class="display-grid">
+      <div class="grid-item">
+Grid Öğesi1
+      </div>
+      <div class="grid-item">
+GridÖğesi2
+      </div>
+      <div class="grid-item">
+GridÖğesi3
+      </div>
+    </div>
+    <hr>
+    <div class="position-container">
+        <div class="position-item">
+Kesin konumlandırılmış öğe
+        </div>
+
+    </div>
+    <hr>
+    <div class="box-model-example">
+Box Model Örneği
+    </div>
+    <hr>
+    <div class="box-model-example">
+<div class="inner-box">
+İç kutu
+</div>
+    </div>
+</body>
+</html>

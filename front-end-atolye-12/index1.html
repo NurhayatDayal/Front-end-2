@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.slider{
+width: 300px;
+height: 200px;
+overflow: hidden;
+position: relative;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+.controls{
+    text-align: center;
+    margin-top: 10px;
+}
+button{
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(46, 135, 253);
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(25, 73, 196);
+}
+.bgcolor{
+    background-color: rgb(168, 63, 249);
+}
+.bgcolor1{
+    background-color: rgb(136, 30, 218);
+}
+.bgcolor2{
+    background-color: rgb(80, 13, 131);
+}
+
+    </style>
+
+</head>
+<body>
+    
+<div class="slider">
+    <div class="slide active bgcolor">
+<h2>Slide 1</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, consequatur eligendi impedit magnam quibusdam architecto libero maxime optio iure, vero fuga. Beatae nisi ipsa animi.</p>
+    </div>
+
+    <div class="slide bgcolor1">
+        <h2>Slide 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, consequatur eligendi impedit magnam quibusdam architecto libero maxime optio iure, vero fuga. Beatae nisi ipsa animi.</p>
+            </div>
+
+            <div class="slide bgcolor2">
+                <h2>Slide 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, consequatur eligendi impedit magnam quibusdam architecto libero maxime optio iure, vero fuga. Beatae nisi ipsa animi.</p>
+                    </div>
+</div>
+
+<div class="controls">
+<button id="prev">Geri</button>
+<button id="next">İleri</button>
+</div>
+
+    <script src="app1.js"></script>
+</body>
+</html>
